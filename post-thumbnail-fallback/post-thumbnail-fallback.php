@@ -2,13 +2,14 @@
 
 /**
   Plugin Name: Post Thumbnail Fallback
-  Plugin URI: http://akismet.com/?return=true
-  Description: Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from comment and trackback spam</strong>. It keeps your site protected from spam even while you sleep. To get started: 1) Click the "Activate" link to the left of this description, 2) <a href="http://akismet.com/get/?return=true">Sign up for an Akismet API key</a>, and 3) Go to your <a href="admin.php?page=akismet-key-config">Akismet configuration</a> page, and save your API key.
-  Version: 2.5.6
-  Author: Automattic
-  Author URI: http://automattic.com/wordpress-plugins/
+  Plugin URI: https://github.com/BostonWP/functionality-plugins
+  Description: Generates HTML for a posts thumbnail using multiple fallbacks to find an image.
+  Version: .1
+  Author: Jon Bishop
+  Author URI: http://www.jonbishop.com
   License: GPLv2 or later
  */
+
 function bwp_get_image_html($post_thumbnail_url, $size = 'thumbnail', $attr = '') {
     $src = $post_thumbnail_url;
     if (is_array($size)) {
